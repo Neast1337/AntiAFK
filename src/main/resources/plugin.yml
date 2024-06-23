@@ -1,0 +1,23 @@
+name: Antiafk
+version: 1.0
+main: org.neast.antiafk.Antiafk
+author: Neast
+description: Plugin anti-AFK pour Bukkit/Spigot
+api-version: 1.19
+
+commands:
+  antiafk:
+    description: Gestion du plugin Antiafk
+    usage: /antiafk <reload>
+    permission: antiafk.reload
+
+permissions:
+  antiafk.reload:
+    description: Permet de recharger la configuration du plugin Antiafk
+    default: op
+  antiafk.logs:
+    description: Permet d'accéder aux logs des kicks AFK pour un joueur spécifié
+    default: op
+  antiafk.notify:
+    description: Permet de recevoir les notifications lorsque quelqu'un devient AFK
+    default: true

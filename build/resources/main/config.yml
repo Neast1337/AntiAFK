@@ -1,0 +1,25 @@
+# Configuration for the Antiafk plugin
+prefix: "&7[Antiafk]&r "
+
+messages:
+  afk: "&cYou are now AFK."
+  notAfk: "&aYou are no longer AFK."
+  kickReason: "&cKicked for inactivity."
+  afkNotify: "&e{player} is now AFK."
+  kickNotify: "&c{player} has been kicked for inactivity."
+
+afk:
+  afkCheckDelayTicks: 400 # Delay before considering a player as AFK (in ticks)
+  kickDelayTicks: 200 # Delay before kicking an AFK player (in ticks)
+
+sounds:
+  afkSound: "ENTITY_PLAYER_LEVELUP" # Sound to play when a player is marked AFK
+  afkSoundVolume: 1.0 # Volume of the AFK sound
+  afkSoundPitch: 1.0 # Pitch of the AFK sound
+  notifySound: "ENTITY_EXPERIENCE_ORB_PICKUP" # Sound to notify admins when a player is AFK
+  notifySoundVolume: 1.0 # Volume of the notify sound
+  notifySoundPitch: 1.0 # Pitch of the notify sound
+
+titles:
+  afkTitle: '&cAFK' # Title to display when a player is marked AFK
+  afkSubtitle: '&6Move to stay connected' # Subtitle to display when a player is marked AFK
